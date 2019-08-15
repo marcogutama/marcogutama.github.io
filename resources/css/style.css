@@ -37,8 +37,19 @@ h1 {
     margin-bottom: 20px;
     color: white;
     font-size: 240%;
-    font-weight: 300;
+    font-weight: lighter;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 150%;
+    font-weight: lighter;
+    /*text-transform: uppercase;*/
     letter-spacing: 1px;
     word-spacing: 4px;
 }
@@ -119,7 +130,7 @@ header {
     display: inline-block;
     height: 25px; 
     margin-top: 30px;
-    margin-left: 22%;
+    margin-left: 11%;
     margin-right: auto;
 }
 
