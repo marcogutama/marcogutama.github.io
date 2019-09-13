@@ -6,10 +6,13 @@
         
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
         <title>Marco Gutama</title>
         
+        <!-- #### FAVICONS ### -->
         <link rel="apple-touch-icon" sizes="180x180" href="resources/favicons/apple-touch-icon.png">
         <link rel="icon" type="image/png" sizes="32x32" href="resources/favicons/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="resources/favicons/favicon-16x16.png">
@@ -20,39 +23,95 @@
         <meta name="msapplication-config" content="resources/favicons/browserconfig.xml">
         <meta name="theme-color" content="#ffffff">
         
-    </head>    
-    <body>
-        <header>
+    </head>
+    
+    <!-- #### VANTA JS PLUGIN ### -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+<script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+<!--    <div id="background_animation"> </div>-->
+    
+    <body>        
+        <header> 
+            <div id="background_animation"> </div>
             <nav>
-                <div class="row navheader">
-<!--                    <img src="resources/img/Asset49.png" alt="MG Logo" class="logo">-->
-                    <img src="resources/img/Asset52.png" alt="Gutama Logo" class="logoG">
-                     <img src="resources/img/Asset1.png" alt="MG Logo" class="logo">
-<!--                    <img src="resources/img/Asset3.png" alt="MG Logo" class="logo">-->
+                <div class="row"> 
+                        <img src="resources/img/Asset1.png" alt="MG Logo" class="logo">
+                        <h3>MARCO GUTAMA</h3>
+<!--                    <img src="resources/img/Asset3.png" alt="MG Logo" class="logo">-->                    
                     <ul class="main-nav">
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">CV</a></li>
+                        <li><a href="#galeria">Work</a></li>
+                        <li><a href="#">About</a></li>
                     </ul>
-                </div>
+                </div>                
             </nav>
-            <div class="hero-text-box">
-            <h1>Marco Gutama</h1>               
-                <h2>Ingeniero en Electrónica y Telecomunicaciones</h2>
-                <!--<a class="btn btn-full" href="#">Boton 1</a>
-                <a class="btn btn-ghost" href="#">Boton 2</a>-->
-                                                            
-            </div>
-            
-            <div class="iconos">
+            <div class="hero-text-box-container">
+                <div class="hero-text-box">
+                    <img src="resources/img/Asset4(2).png" alt="Gutama Logo" class="logoGutama">
+    <!--                <h1>Marco Gutama</h1>               -->
+<!--                    <h2>Electrónica y Telecomunicaciones</h2>-->
+                    <!--<a class="btn btn-full" href="#">Boton 1</a>
+                    <a class="btn btn-ghost" href="#">Boton 2</a>-->                                                         
+                </div>
+                <div class="iconos">
                     <ul class="social-links">
-                        <li><a href="https://github.com/marcogutama"><ion-icon name="logo-github" class="facebook-icon"></ion-icon></a> </li>
-                        <li><a href="https://www.linkedin.com/in/marcogutama/"><ion-icon name="logo-linkedin" class="twitter-icon"></ion-icon></a> </li>
-                        <li><a href="mailto:paul.gutama@gmail.com"><ion-icon name="mail" class="google-icon"></ion-icon></a> </li>
-                        <li><a href="https://web.whatsapp.com/send?phone=593983413559&text=Bienvenido.%20En%20que%20te%20puedo%20ayudar?"><ion-icon name="logo-whatsapp" class="instagram-icon"></ion-icon></a> </li>
+                        <li><a href="https://github.com/marcogutama" target="_blank"><ion-icon name="logo-github" class="facebook-icon"></ion-icon></a> </li>
+                        <li><a href="https://www.linkedin.com/in/marcogutama/" target="_blank"><ion-icon name="logo-linkedin" class="twitter-icon"></ion-icon></a> </li>
+                        <li><a href="mailto:paul.gutama@gmail.com" target="_blank"><ion-icon name="mail" class="google-icon"></ion-icon></a> </li>
+                        <li><a href="https://web.whatsapp.com/send?phone=593983413559&text=Bienvenido.%20En%20que%20te%20puedo%20ayudar?" target="_blank"><ion-icon name="logo-whatsapp" class="instagram-icon"></ion-icon></a> </li>
                     </ul>
-                </div>  
+                </div> 
+            </div>                 
         
         </header> 
+        
+        <section class="section-gallery js--section-gallery" id="galeria">
+            <div class="row">                
+                <h2>Electronic &#38; Telecomunications Engineering</h2>   
+                <p class="long-copy">
+                    Hi, I'm Marco Paúl GUTAMA, a lover of technology and its science. I share some of the projects I have worked on or currently working on. Also some courses that I am preparing.
+                </p>
+            </div>
+
+            <div class="row boton-container">
+                <button type="button" class="btn filter" data-rel="all">Show All</button>
+                <button type="button" class="btn filter" data-rel="1">Logo Design</button>
+                <button type="button" class="btn filter" data-rel="2">Projects</button>
+                <button type="button" class="btn filter" data-rel="3">Courses</button>
+            </div>
+            
+            <p id="demo"></p>
+            
+            <div class="row gallery js--wp-1" id="gallery">
+
+              <div class="pics animation all 1 2">
+                <img id = "home-button" class="img-fluid" src="resources/img/proyectos/iiaot-dark.png" alt="Card image cap">
+              </div>
+
+              <div class="pics animation all 1">
+                <img class="img-fluid" src="resources/img/proyectos/mentor-dark.png" alt="Card image cap">
+              </div>
+
+              <div class="pics animation all 2">
+                <img class="img-fluid" src="resources/img/proyectos/gym-dark.png" alt="Card image cap">
+              </div>
+
+              <div class="pics animation all 3">
+<!--                <img class="img-fluid" src="resources/img/proyectos/mg-dark.png" alt="Card image cap">-->
+                  <img class="img-fluid" src="resources/img/proyectos/altium-dark.png" alt="Card image cap">
+              </div>
+
+              <div class="pics animation all 1">
+                <img class="img-fluid" src="resources/img/proyectos/mg1-dark.png" alt="Card image cap">
+              </div>
+
+              <div class="pics animation all 3">
+                <img class="img-fluid" src="resources/img/proyectos/arduino-dark.png" alt="Card image cap">
+              </div>
+
+            </div>
+        
+        </section>
+            
     
         <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
         
@@ -64,6 +123,8 @@
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
         <!--        Para que funcionee css3 pseudo classes en older browsers (internet explorer 6-8)-->
         <script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+        <!--        To trigger a function when you scroll to an element-->
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
         
         <script src="resources/js/script.js"></script>
         
